@@ -8,8 +8,9 @@ import org.aspectj.lang.annotation.Pointcut;
 
 @Aspect
 public class TrackOp {
-	@Pointcut("execution (* com.javaLive.bussiness.Operation.*(..))")
-	public void k() {
+	@Pointcut("execution (* com.javaLive.bussiness.Operation1.*(..))||execution (* com.javaLive.bussiness.Operation2.*(..))")
+		     // IMP:- You can use || operator for multiple expressions
+	public void k() {												 
 	}
 
 	@Before("k()") // applying pointcut on before advice

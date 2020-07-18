@@ -6,7 +6,8 @@
 	http://www.springframework.org/schema/context
 	http://www.springframework.org/schema/context/spring-context-3.0.xsd">
 
-	<bean id="opBean" class="com.javaLive.bussiness.Operation"></bean>
+	<bean id="opBean1" class="com.javaLive.bussiness.Operation1"></bean>
+	<bean id="opBean2" class="com.javaLive.bussiness.Operation2"></bean>
 	<bean id="trackMyBean" class = "com.javaLive.aop.TrackOp"></bean>
 	<bean
 		class="org.springframework.aop.aspectj.annotation.AnnotationAwareAspectJAutoProxyCreator">
