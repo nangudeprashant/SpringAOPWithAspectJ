@@ -15,11 +15,11 @@ public class TrackOp {
 
 	@Before("k()") // applying pointcut on before advice
 	public void myadvice(JoinPoint jp) {
-		System.out.println("additional concern before method call");
+		System.out.println("Code to be performed before method call");
 	}
 	
 	@After("k()") // applying pointcut on before advice
 	public void myadvice1(JoinPoint jp) {
-		System.out.println("additional concern after method call");
+		System.out.println("Code to be performed after method call");
 	}
 }
